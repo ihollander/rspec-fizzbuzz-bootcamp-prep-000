@@ -4,7 +4,8 @@ def fizzbuzz(x)
     ret = ret.to_s
     ret = "Fizz"
   end
-  if x % 5 == 
+  if x % 5 == 0
+    ret = ret.to_s
     ret += "Buzz"
   end
   ret
