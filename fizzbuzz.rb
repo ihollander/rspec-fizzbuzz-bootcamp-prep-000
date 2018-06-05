@@ -1,12 +1,11 @@
 def fizzbuzz(x)
-  ret = nil
-  if x % 3 == 0
-    ret = ret.to_s
-    ret = "Fizz"
+  if x % 3 == 0 && x % 5 == 0
+    "FizzBuzz"
+  elsif x % 3 == 0
+    "Fizz"
+  elsif x % 5 == 0
+    "Buzz"
+  else
+    nil
   end
-  if x % 5 == 0
-    ret = ret.to_s
-    ret += "Buzz"
-  end
-  ret
 end
